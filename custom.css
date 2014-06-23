@@ -1,0 +1,112 @@
+.custom-grid-blog-full {
+	padding: 34px 7px 35px 8px !important;
+}
+.grid-blog {
+	margin: 0px !important;
+	width: 924px !important;
+}
+.grid-container {
+	margin-top: 5px;
+}
+.row {
+	width: 924px;
+	height: 300px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	margin-top:10px;
+}
+.grid-div {
+	width: 296px;
+	display: inline-block;
+	display: inline-flex;
+	margin: 0px;
+	margin-left: 5px;
+	background-color: rgb(244, 244, 244);;
+	text-align: center;
+}
+.grid-img-block {
+	display: inline-block;
+	display: inline-flex;
+	margin: 0px;
+	margin-bottom: 3px;
+	padding: 0px;
+}
+.grid-post-img {
+	width: 296px;
+	height: 150px;
+	visibility: visible;
+	float: left;
+	position: relative;
+}
+.grid-text-block {
+	width: 296px;
+	margin: 0px;
+	padding: 10px;
+	margin-top: 5px;
+	height: 130px;
+}
+.grid-text {
+	width: 276px;
+	position: relative;
+	float: left;
+	text-align: left;
+	font-weight: bold;
+	color: #000000;
+	font-size: 1.4em;
+}
+.grid-text-post-date {
+	text-align: left;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none !important;
+}
+.grid-text-social-icons {
+	width: 296px;
+	position: relative;
+	text-align: left;
+	top: 260px;
+	float: left;
+	left: -144px;
+}
+.custom-grid-sd {
+	width:296px;
+	padding-top:3px;
+	display: inline-block;
+	text-align: left !important;
+	float: left;
+	position: relative;
+}
+.sd-content ul li a.sd-button:before {
+	font: normal 12px/1 'Genericons' !important;
+}
+.sd-social-icon .sd-content ul li.share-facebook a.sd-button {
+	background: rgb(167, 167, 167) !important;
+	height: 8px !important;
+	width: 8px !important;
+	
+}
+.sd-social-icon .sd-content ul li.share-twitter a.sd-button {
+	background: rgb(167, 167, 167) !important;
+	height: 8px !important;
+	width: 8px !important;
+	
+}
+.sd-social-icon .sd-content ul li.share-google-plus-1 a.sd-button {
+	background: rgb(167, 167, 167) !important;
+	height: 8px !important;
+	width: 8px !important;
+	
+}
+.sd-social-icon .sd-content ul li.share-pinterest a.sd-button {
+	background: rgb(167, 167, 167) !important;
+	height: 8px !important;
+	width: 8px !important;
+	
+}
+.sd-social-icon .sd-content ul li.share-linkedin a.sd-button {
+	background: rgb(167, 167, 167) !important;
+	height: 8px !important;
+	width: 8px !important;
+	
+}
