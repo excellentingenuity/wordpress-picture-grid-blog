@@ -16,7 +16,7 @@ Template Name: Blog Gallery
 				<div id="main-content" class="fullwidth grid-blog">
 				<?php
 					query_posts(
-    					array('post_type' => 'post', 'posts_per_page' => 12)
+    					array('post_type' => 'post', 'posts_per_page' => -1)
 					);
 				?>
 				<!-- Sing Post Starts -->
@@ -25,6 +25,8 @@ Template Name: Blog Gallery
 						<?php
 							$i = 0;
 							$j = 0;
+							$count_posts = $wp_query->post_count;
+							$num_posts = $count_posts - 2;
 							echo '<div class="row">';
 							if(have_posts()) :
 								while(have_posts()) :
@@ -35,7 +37,8 @@ Template Name: Blog Gallery
 							<?php 
 								$img = catch_that_image();
 								if($img == "/path/to/default.png"){
-
+									$x = $num_posts;
+									$num_posts = $x - 1;
 								} else {
 									echo '<div class="grid-div">';
 									echo '<a class="grid-post-link" href="';
@@ -86,7 +89,7 @@ Template Name: Blog Gallery
 									echo '</a></li><li class="share-end"></li></ul></div></div></div>';
 					 				echo '</div>';
 					 				echo '</div>';
-					 				if($j >= 8){
+					 				if($j >= $num_posts){
 					 					echo '</div>';	
 					 				} else {
 					 					if($i == 2) {

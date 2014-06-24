@@ -10,7 +10,6 @@
 }
 .row {
 	width: 924px;
-	height: 300px;
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-bottom: 15px;
@@ -78,35 +77,35 @@
 	position: relative;
 }
 .sd-content ul li a.sd-button:before {
-	font: normal 12px/1 'Genericons' !important;
+	font: normal 6px/1 'Genericons' !important;
 }
 .sd-social-icon .sd-content ul li.share-facebook a.sd-button {
-	background: rgb(167, 167, 167) !important;
-	height: 8px !important;
-	width: 8px !important;
+	background: rgba(194, 194, 194, 0.73) !important;
+	height: 3px !important;
+	width: 3px !important;
 	
 }
 .sd-social-icon .sd-content ul li.share-twitter a.sd-button {
-	background: rgb(167, 167, 167) !important;
-	height: 8px !important;
-	width: 8px !important;
+	background: rgba(194, 194, 194, 0.73) !important;
+	height: 3px !important;
+	width: 3px !important;
 	
 }
 .sd-social-icon .sd-content ul li.share-google-plus-1 a.sd-button {
-	background: rgb(167, 167, 167) !important;
-	height: 8px !important;
-	width: 8px !important;
+	background: rgba(194, 194, 194, 0.73) !important;
+	height: 3px !important;
+	width: 3px !important;
 	
 }
 .sd-social-icon .sd-content ul li.share-pinterest a.sd-button {
-	background: rgb(167, 167, 167) !important;
-	height: 8px !important;
-	width: 8px !important;
+	background: rgba(194, 194, 194, 0.73) !important;
+	height: 3px !important;
+	width: 3px !important;
 	
 }
 .sd-social-icon .sd-content ul li.share-linkedin a.sd-button {
-	background: rgb(167, 167, 167) !important;
-	height: 8px !important;
-	width: 8px !important;
+	background: rgba(194, 194, 194, 0.73) !important;
+	height: 3px !important;
+	width: 3px !important;
 	
 }
