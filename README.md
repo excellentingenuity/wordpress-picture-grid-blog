@@ -18,3 +18,6 @@ Copy blog-gallery.php via ftp to your current theme's folder.
 Create a new page and set it's template to Blog Gallery.
 
 Enjoy.
+
+##Change Log
+6-24-14: Now template page handles all posts possible. Also, social media icons are smaller.
