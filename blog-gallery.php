@@ -25,6 +25,7 @@ Template Name: Blog Gallery
 						<?php
 							$i = 0;
 							$j = 0;
+							$date = false;
 							$count_posts = $wp_query->post_count;
 							$num_posts = $count_posts - 2;
 							echo '<div class="row">';
@@ -53,9 +54,11 @@ Template Name: Blog Gallery
 					 				echo '<div class="grid-text">';
 					 				echo the_title();
 					 				echo '</div>';
-					 				echo '<div class="grid-text-post-date">';
-					 				echo the_date();
-					 				echo '</div>';
+					 				if ($date == true){
+										echo '<div class="grid-text-post-date">';
+										echo the_date();
+										echo '</div>';
+									}
 					 				echo '</div>';
 					 				echo '</a>';
 					 				echo '<div class="grid-text-social-icons">';
