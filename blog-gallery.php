@@ -31,8 +31,8 @@ get_header(); ?>
 							$i = 0;
 							$j = 0;
 							
-							$count_posts = $wp_query->post_count;
-							$num_posts = $count_posts - 2;
+							$posts_count = $wp_query->post_count;
+							$number_of_posts = $posts_count - 2;
 							echo '<div class="row">';
 							if(have_posts()) :
 								while(have_posts()) :
@@ -43,8 +43,8 @@ get_header(); ?>
 							<?php 
 								$img = catch_that_image();
 								if($img == "/path/to/default.png"){
-									$x = $num_posts;
-									$num_posts = $x - 1;
+									$x = $number_of_posts;
+									$number_of_posts = $x - 1;
 								} else {
 									echo '<div class="grid-div">';
 									echo '<a class="grid-post-link" href="';
@@ -97,7 +97,7 @@ get_header(); ?>
 									echo '</a></li><li class="share-end"></li></ul></div></div></div>';
 					 				echo '</div>';
 					 				echo '</div>';
-					 				if($j >= $num_posts){
+					 				if($j >= $number_of_posts){
 					 					echo '</div>';	
 					 				} else {
 					 					if($i == 2) {
