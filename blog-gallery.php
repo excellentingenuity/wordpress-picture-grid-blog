@@ -7,6 +7,9 @@ Template Name: Blog Gallery
 /* configuration variables */
 $date = false;
 $posts_per_page = -1;
+/* iterators */
+$i = 0;
+$j = 0;
 
 get_header(); ?>
 
@@ -28,19 +31,14 @@ get_header(); ?>
 					
 					<div id="gridContainer">
 						<?php
-							$i = 0;
-							$j = 0;
-							
+							/* get the number of posts and adjust for 0 index */
 							$posts_count = $wp_query->post_count;
 							$number_of_posts = $posts_count - 2;
 							echo '<div class="row">';
 							if(have_posts()) :
 								while(have_posts()) :
 									the_post();
-									
-						?>
-						
-							<?php 
+								/* start outputting post gird */
 								$img = catch_that_image();
 								if($img == "/path/to/default.png"){
 									$x = $number_of_posts;
@@ -110,9 +108,6 @@ get_header(); ?>
 					 					}
 					 				}
 					 			}
-					 		?>
-						<?php
-							     
 								endwhile;
 							endif;
 						?>
@@ -121,7 +116,7 @@ get_header(); ?>
 						
 
 					</div>
-						<!-- Sing Post Ends -->
+						<!-- Blog Gallery Ends -->
 						
 				</div>
 				
