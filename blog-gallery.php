@@ -4,6 +4,10 @@ Template Name: Blog Gallery
 */
 
 
+/* configuration variables */
+$date = false;
+$post_count_to_select = -1;
+
 get_header(); ?>
 
 	<!-- Middle Starts -->
@@ -26,7 +30,7 @@ get_header(); ?>
 						<?php
 							$i = 0;
 							$j = 0;
-							$date = false;
+							
 							$count_posts = $wp_query->post_count;
 							$num_posts = $count_posts - 2;
 							echo '<div class="row">';
