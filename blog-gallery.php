@@ -6,7 +6,7 @@ Template Name: Blog Gallery
 
 /* configuration variables */
 $date = false;
-$post_count_to_select = -1;
+$posts_per_page = -1;
 
 get_header(); ?>
 
@@ -21,10 +21,10 @@ get_header(); ?>
 				<div id="main-content" class="fullwidth grid-blog">
 				<?php
 					query_posts(
-    					array('post_type' => 'post', 'posts_per_page' => -1)
+    					array('post_type' => 'post', 'posts_per_page' => $posts_per_page)
 					);
 				?>
-				<!-- Sing Post Starts -->
+				<!-- Blog Gallery Starts Here -->
 					
 					<div id="gridContainer">
 						<?php
