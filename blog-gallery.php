@@ -6,6 +6,7 @@ Template Name: Blog Gallery
 
 /* configuration variables */
 $date = false;
+$enable_hover_description = true;
 $posts_per_page = -1;
 /* iterators */
 $i = 0;
@@ -52,6 +53,9 @@ get_header(); ?>
 									echo '<img class="grid-post-img" src="';
 		 							echo $img;
 					 				echo '" alt="" />';
+					 				if ($enable_hover_description == true){
+					 					
+					 				}
 					 				echo '</div>';
 					 				echo '<div class="grid-text-block">';
 					 				echo '<div class="grid-text">';
