@@ -2,8 +2,9 @@
 /*
 Template Name: Blog Gallery
 */
-?>
-<?php get_header(); ?>
+
+
+get_header(); ?>
 
 	<!-- Middle Starts -->
 	<div id="middle-out-top">
