@@ -22,7 +22,6 @@ get_header(); ?>
 		<!-- Content Starts -->
 		<div id="content" class="wrap full custom-grid-blog-full">
 			
-				<div id="main-content" class="fullwidth grid-blog">
 				<?php
 					query_posts(
     					array('post_type' => 'post', 'posts_per_page' => $posts_per_page)
@@ -54,7 +53,7 @@ get_header(); ?>
 		 							echo $img;
 					 				echo '" alt="" />';
 					 				if ($enable_hover_description == true){
-					 					
+					 					echo '<div></div>';
 					 				}
 					 				echo '</div>';
 					 				echo '<div class="grid-text-block">';
@@ -122,7 +121,7 @@ get_header(); ?>
 					</div>
 						<!-- Blog Gallery Ends -->
 						
-				</div>
+				
 				
 				
 			
