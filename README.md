@@ -1,4 +1,4 @@
-wordpress-picture-grid-blog
+Wordpress Picture Grid Blog
 ===========================
 
 A Custom Page template and css to create a blog page with picture posts in a 3 wide grid like linkdin's post page
@@ -18,6 +18,3 @@ Copy blog-gallery.php via ftp to your current theme's folder.
 Create a new page and set it's template to Blog Gallery.
 
 Enjoy.
-
-##Change Log
-6-24-14: Now template page handles all posts possible. Also, social media icons are smaller.
