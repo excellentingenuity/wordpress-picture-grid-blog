@@ -64,14 +64,11 @@
 	width: 296px;
 	position: relative;
 	text-align: left;
-	top: 260px;
 	float: left;
-	left: -144px;
 }
 .custom-grid-sd {
 	width:296px;
-	display: block;
-	float: left;
+	display: block-inline;
 }
 .custom-grid-sd-content {
 	padding:10px;
