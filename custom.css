@@ -70,11 +70,11 @@
 }
 .custom-grid-sd {
 	width:296px;
-	padding-top:3px;
-	display: inline-block;
-	text-align: left !important;
+	display: block;
 	float: left;
-	position: relative;
+}
+.custom-grid-sd-content {
+	padding:10px;
 }
 .sd-content ul li a.sd-button:before {
 	font: normal 13px/1 'Genericons' !important;
