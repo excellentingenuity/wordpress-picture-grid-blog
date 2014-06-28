@@ -47,9 +47,9 @@ Template Name: Blog Gallery
 									echo the_permalink();
 									echo '">';
 									if ($enable_hover_description == true){
-					 					echo '<div class="grid-hover-text">';
+					 					echo '<p class="grid-hover-text">';
 										echo wp_trim_words(get_the_content(), 25 );
-					 					echo '</div>';
+					 					echo '</p>';
 					 				}
 									echo '<div class="grid-img-block">';
 									echo '<img class="grid-post-img" src="';

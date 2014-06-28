@@ -24,6 +24,23 @@
 	background-color: rgb(244, 244, 244);;
 	text-align: center;
 }
+.grid-div:hover .grid-hover-text{
+	visibility: visible;
+	display: inline;
+	z-index: 2;
+}
+.grid-hover-text {
+	display: none;
+	visibility: hidden;
+	position: absolute;
+	width: 276px;
+	height: 130px;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 .grid-img-block {
 	display: inline-block;
 	display: inline-flex;
