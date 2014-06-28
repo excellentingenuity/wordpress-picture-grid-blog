@@ -38,6 +38,15 @@
 	float: left;
 	position: relative;
 }
+.grid-hover-text {
+	visibility: hidden;
+	color:#ffffff;
+	font-size: 10px;
+}
+.grid-hover-text:hover {
+	visibility: visible;
+	opacity: 0.5;
+}
 .grid-text-block {
 	width: 296px;
 	margin: 0px;

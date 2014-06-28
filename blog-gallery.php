@@ -53,7 +53,9 @@ get_header(); ?>
 		 							echo $img;
 					 				echo '" alt="" />';
 					 				if ($enable_hover_description == true){
-					 					echo '<div></div>';
+					 					echo '<div class="grid-hover-text">';
+										echo wp_trim_words(get_the_content(), 25 );
+					 					echo '</div>';
 					 				}
 					 				echo '</div>';
 					 				echo '<div class="grid-text-block">';

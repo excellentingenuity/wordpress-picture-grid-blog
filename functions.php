@@ -1,3 +1,4 @@
+<?php
 function catch_that_image() {
   global $post, $posts;
   $first_img = '';
