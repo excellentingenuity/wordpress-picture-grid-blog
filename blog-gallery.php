@@ -26,6 +26,7 @@ Template Name: Blog Gallery
 							$i = 0;
 							$j = 0;
 							$date = false;
+							$enable_hover_description = true;
 							$count_posts = $wp_query->post_count;
 							$num_posts = $count_posts - 2;
 							echo '<div class="row">';
@@ -45,6 +46,11 @@ Template Name: Blog Gallery
 									echo '<a class="grid-post-link" href="';
 									echo the_permalink();
 									echo '">';
+									if ($enable_hover_description == true){
+					 					echo '<div class="grid-hover-text">';
+										echo wp_trim_words(get_the_content(), 25 );
+					 					echo '</div>';
+					 				}
 									echo '<div class="grid-img-block">';
 									echo '<img class="grid-post-img" src="';
 		 							echo $img;
