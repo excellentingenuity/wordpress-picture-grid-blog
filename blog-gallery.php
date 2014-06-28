@@ -20,7 +20,9 @@ get_header(); ?>
 	<div id="middle-content" class="full">
 	<div id="middle-content-bottom" class="full">
 		<!-- Content Starts -->
-		<div id="content" class="wrap full custom-grid-blog-full">
+		<div id="content" class="wrap full">
+			
+				<div id="main-content" class="fullwidth grid-blog">
 			
 				<?php
 					query_posts(
@@ -122,7 +124,7 @@ get_header(); ?>
 
 					</div>
 						<!-- Blog Gallery Ends -->
-						
+		</div>				
 				
 				
 				
