@@ -43,13 +43,14 @@ Template Name: Blog Gallery
 									$num_posts = $x - 1;
 								} else {
 									echo '<div class="grid-div">';
+									echo '<div class="grid-img-text-blocks-wrapper">';
 									echo '<a class="grid-post-link" href="';
 									echo the_permalink();
 									echo '">';
 									if ($enable_hover_description == true){
-					 					echo '<p class="grid-hover-text">';
+					 					echo '<div class="grid-hover-text">';
 										echo wp_trim_words(get_the_content(), 25 );
-					 					echo '</p>';
+					 					echo '</div>';
 					 				}
 									echo '<div class="grid-img-block">';
 									echo '<img class="grid-post-img" src="';
@@ -67,6 +68,8 @@ Template Name: Blog Gallery
 									}
 					 				echo '</div>';
 					 				echo '</a>';
+					 				echo '</div>';
+					 				
 					 				echo '<div class="grid-text-social-icons">';
 					 				echo '<div class="sharedaddy sd-sharing-enabled custom-grid-sd">';
 									echo '<div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing custom-grid-sd-block">';

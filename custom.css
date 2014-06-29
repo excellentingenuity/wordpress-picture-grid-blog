@@ -17,12 +17,19 @@
 }
 .grid-div {
 	width: 296px;
+	height: 330px;
 	display: inline-block;
 	display: inline-flex;
 	margin: 0px;
 	margin-left: 5px;
 	background-color: rgb(244, 244, 244);;
 	text-align: center;
+}
+.grid-img-text-blocks-wrapper {
+	height:280px !important;
+	width: 296px !important;
+	display: block;
+	position: absolute;
 }
 .grid-div:hover .grid-hover-text{
 	visibility: visible;
@@ -60,7 +67,7 @@
 	margin: 0px;
 	padding: 10px;
 	margin-top: 5px;
-	height: 130px;
+	height: 120px;
 }
 .grid-text {
 	width: 276px;
@@ -78,13 +85,16 @@
 	text-decoration: none !important;
 }
 .grid-text-social-icons {
-	width: 296px;
+	width: 270px !important;
+	height: 30px !important;
 	position: relative;
 	text-align: left;
-	float: left;
+	margin: 0px;
+	padding:0px;
+	top: 260px;
 }
 .custom-grid-sd {
-	width:296px;
+	width:270px !important;
 	display: block-inline;
 }
 .custom-grid-sd-content {
