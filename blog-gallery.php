@@ -3,6 +3,8 @@
 Template Name: Blog Gallery
 */
 $posts_per_page = 99;
+$date = false;
+$enable_hover_description = true;
 ?>
 <?php get_header(); ?>
 
@@ -26,95 +28,91 @@ $posts_per_page = 99;
 						<?php
 							$i = 0;
 							$j = 0;
-							$date = false;
-							$enable_hover_description = true;
+							
 							$count_posts = $wp_query->post_count;
 							$num_posts = $count_posts - 2;
 							echo '<div class="row">';
 							if(have_posts()) :
 								while(have_posts()) :
 									the_post();
-									
-						?>
-						
-							<?php 
-								$img = catch_that_image();
-								if($img == "/path/to/default.png"){
-									$x = $num_posts;
-									$num_posts = $x - 1;
-								} else {
-									echo '<div class="grid-div">';
-									echo '<div class="grid-img-text-blocks-wrapper">';
-									echo '<a class="grid-post-link" href="';
-									echo the_permalink();
-									echo '">';
-									if ($enable_hover_description == true){
-					 					echo '<div class="grid-hover-text">';
-										echo wp_trim_words(get_the_content(), 25 );
-					 					echo '</div>';
-					 				}
-									echo '<div class="grid-img-block">';
-									echo '<img class="grid-post-img" src="';
-		 							echo $img;
-					 				echo '" alt="" />';
-					 				echo '</div>';
-					 				echo '<div class="grid-text-block">';
-					 				echo '<div class="grid-text">';
-					 				echo the_title();
-					 				echo '</div>';
-					 				if ($date == true){
-										echo '<div class="grid-text-post-date">';
-										echo the_date();
-										echo '</div>';
-									}
-					 				echo '</div>';
-					 				echo '</a>';
-					 				echo '</div>';
-					 				
-					 				echo '<div class="grid-text-social-icons">';
-					 				echo '<div class="sharedaddy sd-sharing-enabled custom-grid-sd">';
-									echo '<div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing custom-grid-sd-block">';
-									echo '<div class="sd-content custom-grid-sd-content">';
-									echo '<ul>';
-									echo '<li class="share-facebook">';
-									echo '<a rel="nofollow" target="_blank" class="share-facebook sd-button share-icon no-text" href="';
-									echo the_permalink();
-									echo '?share=facebook&amp;nb=1" title="Share on Facebook" id="sharing-facebook-9333">';
-									echo '</a></li>';
-									echo '<li class="share-linkedin">';
-									echo '<a rel="nofollow" target="_blank" class="share-linkedin sd-button share-icon no-text" href="';
-									echo the_permalink();
-									echo '?share=linkedin&amp;nb=1" title="Click to share on LinkedIn" id="sharing-linkedin-9333">';
-									echo '</a></li>';
-									echo '<li class="share-twitter">';
-									echo '<a rel="nofollow" target="_blank" class="share-twitter sd-button share-icon no-text" href="';
-									echo the_permalink();
-									echo '?share=twitter&amp;nb=1" title="Click to share on Twitter" id="sharing-twitter-9333">';
-									echo '</a></li>';
-									echo '<li class="share-google-plus-1"><a rel="nofollow" target="_blank" class="share-google-plus-1 sd-button share-icon no-text" href="';
-									echo the_permalink();
-									echo '?share=google-plus-1&amp;nb=1" title="Click to share on Google+" id="sharing-google-9333">';
-									echo '</a></li>';
-									echo '<li class="share-pinterest">';
-									echo '<a rel="nofollow" target="_blank" class="share-pinterest sd-button share-icon no-text" href="';
-									echo the_permalink();
-									echo '?share=pinterest&amp;nb=1" title="Click to share on Pinterest">';
-									echo '</a></li><li class="share-end"></li></ul></div></div></div>';
-					 				echo '</div>';
-					 				echo '</div>';
-					 				if($j > $num_posts){
-					 					echo '</div>';	
-					 				} else {
-					 					if($i == 2) {
-											echo '</div><div class="row">';
-											$i = 0;
-											$j++;
-					 					} else {
-					 						$i++;
-					 						$j++;
-					 					}
-					 				}
-					 			}
+
+									$img = catch_that_image();
+									if($img == "/path/to/default.png"){
+										$x = $num_posts;
+										$num_posts = $x - 1;
+									} else {
+										echo '<div class="grid-div">';
+										echo '<div class="grid-img-text-blocks-wrapper">';
+										echo '<a class="grid-post-link" href="';
+										echo the_permalink();
+										echo '">';
+										if ($enable_hover_description == true){
+						 					echo '<div class="grid-hover-text">';
+											echo wp_trim_words(get_the_content(), 25 );
+						 					echo '</div>';
+						 				}
+										echo '<div class="grid-img-block">';
+										echo '<img class="grid-post-img" src="';
+			 							echo $img;
+						 				echo '" alt="" />';
+						 				echo '</div>';
+						 				echo '<div class="grid-text-block">';
+						 				echo '<div class="grid-text">';
+						 				echo the_title();
+						 				echo '</div>';
+						 				if ($date == true){
+											echo '<div class="grid-text-post-date">';
+											echo the_date();
+											echo '</div>';
+										}
+						 				echo '</div>';
+						 				echo '</a>';
+						 				echo '</div>';
+						 				
+						 				echo '<div class="grid-text-social-icons">';
+						 				echo '<div class="sharedaddy sd-sharing-enabled custom-grid-sd">';
+										echo '<div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing custom-grid-sd-block">';
+										echo '<div class="sd-content custom-grid-sd-content">';
+										echo '<ul>';
+										echo '<li class="share-facebook">';
+										echo '<a rel="nofollow" target="_blank" class="share-facebook sd-button share-icon no-text" href="';
+										echo the_permalink();
+										echo '?share=facebook&amp;nb=1" title="Share on Facebook" id="sharing-facebook-9333">';
+										echo '</a></li>';
+										echo '<li class="share-linkedin">';
+										echo '<a rel="nofollow" target="_blank" class="share-linkedin sd-button share-icon no-text" href="';
+										echo the_permalink();
+										echo '?share=linkedin&amp;nb=1" title="Click to share on LinkedIn" id="sharing-linkedin-9333">';
+										echo '</a></li>';
+										echo '<li class="share-twitter">';
+										echo '<a rel="nofollow" target="_blank" class="share-twitter sd-button share-icon no-text" href="';
+										echo the_permalink();
+										echo '?share=twitter&amp;nb=1" title="Click to share on Twitter" id="sharing-twitter-9333">';
+										echo '</a></li>';
+										echo '<li class="share-google-plus-1"><a rel="nofollow" target="_blank" class="share-google-plus-1 sd-button share-icon no-text" href="';
+										echo the_permalink();
+										echo '?share=google-plus-1&amp;nb=1" title="Click to share on Google+" id="sharing-google-9333">';
+										echo '</a></li>';
+										echo '<li class="share-pinterest">';
+										echo '<a rel="nofollow" target="_blank" class="share-pinterest sd-button share-icon no-text" href="';
+										echo the_permalink();
+										echo '?share=pinterest&amp;nb=1" title="Click to share on Pinterest">';
+										echo '</a></li><li class="share-end"></li></ul></div></div></div>';
+						 				echo '</div>';
+						 				echo '</div>';
+						 				if($j > $num_posts){
+						 					echo '</div>';	
+						 				} else {
+						 					if($i == 2) {
+												echo '</div><div class="row">';
+												$i = 0;
+												$j++;
+						 					} else {
+						 						$i++;
+						 						$j++;
+						 					}
+						 				}
+						 			}
 					 		?>
 						<?php
 							     
