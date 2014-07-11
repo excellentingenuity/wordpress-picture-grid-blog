@@ -2,6 +2,7 @@
 /*
 Template Name: Blog Gallery
 */
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $posts_per_page = 99;
 $date = false;
 $enable_hover_description = true;
