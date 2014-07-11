@@ -2,6 +2,7 @@
 /*
 Template Name: Blog Gallery
 */
+$posts_per_page = 99;
 ?>
 <?php get_header(); ?>
 
@@ -16,7 +17,7 @@ Template Name: Blog Gallery
 				<div id="main-content" class="fullwidth grid-blog">
 				<?php
 					query_posts(
-    					array('post_type' => 'post', 'posts_per_page' => -1)
+    					array('post_type' => 'post', 'posts_per_page' => $posts_per_page)
 					);
 				?>
 				<!-- Sing Post Starts -->
@@ -101,7 +102,7 @@ Template Name: Blog Gallery
 									echo '</a></li><li class="share-end"></li></ul></div></div></div>';
 					 				echo '</div>';
 					 				echo '</div>';
-					 				if($j >= $num_posts){
+					 				if($j > $num_posts){
 					 					echo '</div>';	
 					 				} else {
 					 					if($i == 2) {
