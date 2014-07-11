@@ -3,7 +3,7 @@
 Template Name: Blog Gallery
 */
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-$posts_per_page = 99;
+$posts_per_page = 33;
 $date = false;
 $enable_hover_description = true;
 ?>
@@ -101,7 +101,7 @@ $enable_hover_description = true;
 										echo '</a></li><li class="share-end"></li></ul></div></div></div>';
 						 				echo '</div>';
 						 				echo '</div>';
-						 				if($j > $num_posts){
+						 				if(($j > $num_posts) || ($j >= 33)){
 						 					echo '</div>';	
 						 				} else {
 						 					if($i == 2) {
