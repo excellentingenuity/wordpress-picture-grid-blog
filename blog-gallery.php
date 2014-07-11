@@ -128,7 +128,7 @@ $enable_hover_description = true;
 						    elseif ( get_next_posts_link() || get_previous_posts_link() )
 						    {
 						?>
-						    <div class="wp-navigation clearfix">
+						    <div class="wp-navigation clearfix grid-blog-pagination-block">
 						        <div class="aligncenter grid-blog-pagination grid-blog-pagination-left"><?php next_posts_link('&laquo; Older Entries'); ?></div>
 						        <div class="aligncenter grid-blog-pagination grid-blog-pagination-right"><?php previous_posts_link('Newer Entries &raquo;'); ?></div>
 						        </div>
