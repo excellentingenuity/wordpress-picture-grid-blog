@@ -19,7 +19,7 @@ $enable_hover_description = true;
 				<div id="main-content" class="fullwidth grid-blog">
 				<?php
 					query_posts(
-    					array('post_type' => 'post', 'posts_per_page' => $posts_per_page)
+    					array('post_type' => 'post', 'posts_per_page' => $posts_per_page, 'paged' => $paged)
 					);
 				?>
 				<!-- Sing Post Starts -->
