@@ -42,7 +42,7 @@ $enable_hover_description = true;
 										//refactor to keep post but put in an image
 										//$x = $num_posts;
 										//$num_posts = $x - 1;
-										$img = 'http://www.lollydaskal.com/wp-content/uploads/2014/05/Screen-Shot-2013-10-13-at-10.22.22-AM.png';
+										$img = 'http://www.lollydaskal.com/wp-content/uploads/2013/03/Screen-shot-2013-03-22-at-10.37.42-PM-e1364007776356.png';
 									}
 									echo '<div class="grid-div">';
 									echo '<div class="grid-img-text-blocks-wrapper">';
