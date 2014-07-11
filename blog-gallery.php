@@ -120,6 +120,20 @@ $enable_hover_description = true;
 								endwhile;
 							endif;
 						?>
+						<?php
+							if ( function_exists('wp_pagenavi') )
+						    {
+						      	wp_pagenavi();
+						   	}
+						    elseif ( get_next_posts_link() || get_previous_posts_link() )
+						    {
+						?>
+						    <div class="wp-navigation clearfix">
+						        <div class="alignleft"><?php next_posts_link('&laquo; Older Entries'); ?></div>
+						        <div class="alignright"><?php previous_posts_link('Newer Entries &raquo;'); ?></div>
+						        </div>
+						<?php } //if wp_pagenavi
+						?>
 						</div>
 					
 						
