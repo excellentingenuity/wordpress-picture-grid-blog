@@ -39,8 +39,10 @@ $enable_hover_description = true;
 
 									$img = catch_that_image();
 									if($img == "/path/to/default.png"){
-										$x = $num_posts;
-										$num_posts = $x - 1;
+										//refactor to keep post but put in an image
+										//$x = $num_posts;
+										//$num_posts = $x - 1;
+										$img = 'http://www.lollydaskal.com/wp-content/uploads/2014/05/Screen-Shot-2013-10-13-at-10.22.22-AM.png';
 									} else {
 										echo '<div class="grid-div">';
 										echo '<div class="grid-img-text-blocks-wrapper">';
@@ -101,7 +103,7 @@ $enable_hover_description = true;
 										echo '</a></li><li class="share-end"></li></ul></div></div></div>';
 						 				echo '</div>';
 						 				echo '</div>';
-						 				if(($j > $num_posts) || ($j >= 33)){
+						 				if(($j > $num_posts) || ($j >= $posts_per_page)){
 						 					echo '</div>';	
 						 				} else {
 						 					if($i == 2) {
