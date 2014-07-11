@@ -39,9 +39,6 @@ $enable_hover_description = true;
 
 									$img = catch_that_image();
 									if($img == "/path/to/default.png"){
-										//refactor to keep post but put in an image
-										//$x = $num_posts;
-										//$num_posts = $x - 1;
 										$img = 'http://www.lollydaskal.com/wp-content/uploads/2013/03/Screen-shot-2013-03-22-at-10.37.42-PM-e1364007776356.png';
 									}
 									echo '<div class="grid-div">';
