@@ -129,8 +129,8 @@ $enable_hover_description = true;
 						    {
 						?>
 						    <div class="wp-navigation clearfix">
-						        <div class="alignleft"><?php next_posts_link('&laquo; Older Entries'); ?></div>
-						        <div class="alignright"><?php previous_posts_link('Newer Entries &raquo;'); ?></div>
+						        <div class="aligncenter grid-blog-pagination grid-blog-pagination-left"><?php next_posts_link('&laquo; Older Entries'); ?></div>
+						        <div class="aligncenter grid-blog-pagination grid-blog-pagination-right"><?php previous_posts_link('Newer Entries &raquo;'); ?></div>
 						        </div>
 						<?php } //if wp_pagenavi
 						?>
