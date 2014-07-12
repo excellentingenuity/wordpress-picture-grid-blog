@@ -128,8 +128,8 @@ $enable_hover_description = true;
 						    {
 						?>
 						    <div class="wp-navigation clearfix grid-blog-pagination-block">
-						        <div class="aligncenter grid-blog-pagination grid-blog-pagination-left"><?php next_posts_link('&laquo; Older Entries'); ?></div>
-						        <?php if ($paged > 1){ ?>
+						        <div class="aligncenter grid-blog-pagination grid-blog-pagination-left"><?php next_posts_link('&laquo; Older Entries');?></div>
+						        <?php if (($paged > 1) && ($paged != $wp_query->max_num_pages)){ ?>
 						        <div class="grid-blog-pagination grid-blog-page-pagination-seperator">||</div>
 						        <?php } ?>
 						        <div class="aligncenter grid-blog-pagination grid-blog-pagination-right"><?php previous_posts_link('Newer Entries &raquo;'); ?></div>
