@@ -136,3 +136,21 @@
 	width: 3px !important;
 	
 }
+.grid-blog-pagination-block {
+	text-align: center;
+}
+.grid-blog-pagination {
+	color: #000000 !important;
+	display: inline-block;
+	padding: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.grid-blog-pagination-left > a {
+	text-decoration: none !important;
+	color: #000000 !important;
+}
+.grid-blog-pagination-right > a {
+	text-decoration: none !important;
+	color: #000000 !important
+}
